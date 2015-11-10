@@ -9,7 +9,7 @@
     "test:watch": "npm test -- --watch",
     "build:lib": "./node_modules/.bin/babel ./src --out-dir ./lib",
     "build": "npm run build:lib",
-    "prepublish": "npm run clean",
+    "prepublish": "npm run clean && npm run build",
     "postpublish": "npm run clean"
   },
   "repository": {
